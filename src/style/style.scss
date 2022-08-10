@@ -1,12 +1,4 @@
 @font-face {
-    font-family: 'Staatliches';
-    src: url('../assets/fonts/Staatliches-Regular.ttf');
-}
-@font-face {
-    font-family: 'Southmore';
-    src: url('../assets/fonts/Southmore.ttf');
-}
-@font-face {
     font-family: 'SignikaNegative';
     src: url('../assets/fonts/SignikaNegative-SemiBold.ttf');
 }
@@ -35,12 +27,15 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'SignikaNegative-Light';
 }
 
 body{
     color:#777;
     background-color: var(--gray);
-    font-family: 'SignikaNegative';
+    font-size: 16px;
+    font-family: 'SignikaNegative-Light';
 }
 img{
     width:100%;
@@ -51,6 +46,7 @@ img{
 h1,h2,h3,h4,h5,h6,p{
     padding:0;
     margin:0;
+    font-family: 'SignikaNegative';
 }
 
 
@@ -120,6 +116,12 @@ h1,h2,h3,h4,h5,h6,p{
 
 .d-flex{
     display:flex;
+}
+.flex-grow-auto{
+    flex:1;
+}
+.flex-column{
+    flex-direction: column;
 }
 
 .align-items-center{

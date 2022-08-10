@@ -45,10 +45,10 @@ export default function Conversation() {
             <RoundedIcon icon={<FaVideo />} />
           </div>
         </div>
-        <div className="conversation-messages-wraper flex-grow-1 overflow-auto">
+        <div className="conversation-messages-wraper">
           <div className="d-flex flex-column align-items-start justify-content-end">
             {conversation.messages.length >= 1 ? conversation.messages.map(conversation => 
-              <div className={`message-card d-flex ${conversation.fromMe ? '' : 'align-self-end'}`} key={conversation._id}>
+              <div className={`message-card d-flex ${conversation.fromMe ? '' : 'from-me'}`} key={conversation._id}>
                 {conversation.fromMe && <Avatar src={conversation.avatar} alt='' />}
                 <div className={`message-text ${conversation.fromMe ? 'me' :''}`}>
                   <p>{conversation.text}</p>

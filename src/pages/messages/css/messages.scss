@@ -5,13 +5,22 @@
     max-height:calc(100vh - 4.5rem);
 }
 
+.conversation-messages-wraper{
+    flex:1;
+    overflow-y: scroll;
+}
+
+
 .conversation-header{
     padding:.5rem;
-    // background-color: rgb(243, 242, 242);
-    border-bottom:2px solid #eee;
+    margin-bottom: .5rem;
+    background-color: #fff;
     .rounded-icon{
         margin-left: 1rem;
         background-color: rgb(230, 227, 227);
+    }
+    .user-avatar{
+        margin-right: .6rem;
     }
 }
 .conversation-sidebar{
@@ -21,6 +30,7 @@
 
 .message-card{
     margin-bottom: 1rem;
+    align-self: flex-start;
     .message-text{
         height: max-content;
         margin:0 1rem;
@@ -33,6 +43,11 @@
         color: var(--white);
         background-color: var(--lightblue);
     }
+}
+
+.message-card.from-me{
+    align-self: flex-end;
+
 }
 
 

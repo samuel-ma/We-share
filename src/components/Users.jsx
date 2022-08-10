@@ -9,7 +9,7 @@ export default function Users({users, cName = ''}) {
             <img className="rounded-circle" src={process.env.PUBLIC_URL+user.avatar} alt='' />
           </div>
           <div className="list-item-text">
-            <h6>{user.name}</h6>
+            <h3>{user.name}</h3>
             <span className='small'>{user.academic.college}</span>
           </div>
         </Link>
