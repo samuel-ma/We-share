@@ -43,11 +43,17 @@ export default function UserContextProvider({children}) {
       return () => socket.off('active-users');
     }, [socket]);
 
+    const getUser = id => {
+      const singleUser = users.filter(user => user._id === id)[0]
+      return singleUser ? singleUser : null
+    }
+
     const values = {
       loading, 
       errors, 
       users, 
-      activeUsers
+      activeUsers,
+      getUser
     }
 
     return (

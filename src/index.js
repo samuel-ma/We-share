@@ -6,7 +6,7 @@ import ProfileContextProvider from './contexts/ProfileContextProvider'
 import UserContextProvider from './contexts/UserContextProvider'
 import MessagesContextProvider from './contexts/MessagesContextProvider'
 import App from './App';
-import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 import './style/style.css'
 
 ReactDOM.render(

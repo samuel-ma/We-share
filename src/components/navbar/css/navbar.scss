@@ -17,7 +17,17 @@
     }
 }
 
-
+ul{
+    margin:0;
+    padding:0;
+    display:flex;
+    li{
+        padding:1rem;
+    }
+    .nav-link{
+        text-decoration: none;
+    }
+}
 
 .badge-card{
     margin:0 1rem;

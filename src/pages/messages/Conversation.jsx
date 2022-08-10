@@ -4,6 +4,8 @@ import {FaPaperPlane, FaVideo, FaPhoneAlt} from 'react-icons/fa'
 import { useMessages } from '../../contexts/MessagesContextProvider';
 import Avatar from '../../components/Avatar';
 import RoundedIcon from '../../components/RoundedIcon';
+import Messages from './'
+
 
 export default function Conversation() {
 
@@ -64,10 +66,8 @@ export default function Conversation() {
           </form>
         </div>
       </div>}
-      <div className="conversation-sidebar">
-        <div className="sidebar-content">
-          vv
-        </div>
+      <div className="app-inner-sidebar">
+        <Messages />
       </div>
     </div>
   )

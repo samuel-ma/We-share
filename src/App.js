@@ -4,7 +4,7 @@ import Navbar from './components/navbar'
 import Sidebar from './components/sidebar';
 import Conversation from './pages/messages/Conversation';
 import Login from './pages/forms/Login';
-import Profile from './pages/users/Profile';
+import Profile from './pages/profile';
 
 
 function App() {

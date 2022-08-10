@@ -16,6 +16,18 @@
   color: var(--white);
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+ul li {
+  padding: 1rem;
+}
+ul .nav-link {
+  text-decoration: none;
+}
+
 .badge-card {
   margin: 0 1rem;
   position: relative;

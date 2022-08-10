@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'Staatliches';
+    src: url('../assets/fonts/Staatliches-Regular.ttf');
+}
+@font-face {
+    font-family: 'Southmore';
+    src: url('../assets/fonts/Southmore.ttf');
+}
+@font-face {
+    font-family: 'SignikaNegative';
+    src: url('../assets/fonts/SignikaNegative-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'SignikaNegative-Light';
+    src: url('../assets/fonts/SignikaNegative-Light.ttf');
+}
+
 ::-webkit-scrollbar{
     display:none !important;
 }
@@ -7,17 +24,23 @@
 
 :root{
     --blue:rgb(76, 129, 197);
-    --lightblue:rgb(65, 143, 245);
+    --lightblue:rgb(101, 157, 231);
     --gradient: linear-gradient(160deg, rgb(65, 143, 245), rgb(196, 115, 243));
     --white:#fff;
     --gray:rgb(239, 241, 233);
     --lightgray:rgb(243, 245, 239);
 }
 
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
 
 body{
     color:#777;
     background-color: var(--gray);
+    font-family: 'SignikaNegative';
 }
 img{
     width:100%;
@@ -51,21 +74,28 @@ h1,h2,h3,h4,h5,h6,p{
     flex:1;
 }
 
-.list-item-card{
-    padding:.5rem;
-    text-decoration: none;
-    color:inherit;
-    .list-item-text{
-        margin-left:.5rem;
-        text-decoration: none;
-        color:inherit;
-    }
-}
+
 .rounded-icon{
     width:35px;
     height:35px;
     font-size: 120%;
 }
+
+.list-item-card{
+    padding:.5rem;
+    text-decoration: none;
+    color:inherit;
+    .list-item-text{
+        margin-left:1rem;
+        text-decoration: none;
+        color:inherit;
+    }
+    &:hover{
+        color: var(--white);
+        background-color: var(--blue);
+    }
+}
+
 .user-avatar{
     border-radius:50%;
     img{
@@ -73,18 +103,36 @@ h1,h2,h3,h4,h5,h6,p{
         height:40px;
     }
 }
-
 .user-avatar.active{
-    border:2px solid rgb(1, 197, 1);
     position:relative;
 }
 .user-avatar.active::after{
     content:'';
-    width:13px;
-    height:13px;
+    width:12px;
+    height:12px;
     border-radius: 50%;
     background-color: rgb(0, 238, 0);
     position:absolute;
-    bottom:8px;
+    bottom:6px;
     right:-5px;
+}
+
+
+.d-flex{
+    display:flex;
+}
+
+.align-items-center{
+    align-items: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center;
+}
+
+.rounded-circle{
+    border-radius: 50%;
+    overflow: hidden;
 }
